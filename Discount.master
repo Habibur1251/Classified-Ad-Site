@@ -1,0 +1,172 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Discount.master.cs" Inherits="Discount" %>
+<%@ Register Src="~/UserControl/SearchCtrlDiscount.ascx" TagName="Search_Inner_Ctrl"
+    TagPrefix="uc4" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>www.ApnerDeal.com: Deals and discounts site of Bangladesh</title>
+    <meta name="description" content="Discounts, Coupons, Deals, Price Reduction news, Classified ads all in one place"/>
+    <meta name="keywords" content="Best deals on travel,Classified free ads,Bangladesh news,online free advertisement,hotels for cheap,Dhaka Deals Discounts,Bangladeshi Deals Discounts, apnerdeal.com"/>
+    <meta name="GOOGLEBOT" content="INDEX, FOLLOW"/>
+    <meta name="ROBOTS" content="INDEX, FOLLOW"/>
+    <meta name="REVISIT-AFTER" content="6 days"/>
+    <meta name="google-site-verification" content="Q_TOQf3gNBZaJjv-XNQZQMuJNDnBnBRoPicmN5nkUlk" />
+    <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+    
+      <link href="css/style.css" rel="stylesheet" type="text/css" /> 
+    <link href="css/Calender.css" rel="stylesheet" type="text/css" />         
+    <script type="text/javascript" src="Script/jquery-1.3.2.min.js">
+    </script>
+    <link href="CSS/styleDiscount.css" rel="stylesheet" type="text/css" />
+     <script type="text/javascript">
+    function genericPopup(href,width,height,scrollbars,resizable,top,left,toolbar,status,directories,menubar){var param="width="+width+", height="+height+", scrollbars="+scrollbars+", resizable="+resizable+",top="+top+",left="+left+",toolbar="+toolbar+",status="+status+",directories="+directories+",menubar="+menubar+"";return window.open(href,"",param);}
+    </script>
+    <script type="text/javascript" language="JavaScript">
+	function myprint()
+	{
+		window.print();
+	}
+</script>
+    <style type="text/css">
+        .style1
+        {
+            height: 60px;
+            width: 356px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <asp:ScriptManager id="ScriptManager1" runat="server" EnablePartialRendering="true">
+    <Scripts>
+    <asp:ScriptReference Path="~/JavaScript/thickbox-compressed.js" />
+    <asp:ScriptReference Path="~/JavaScript/jquery.blockUI.js" />
+     </Scripts>
+    </asp:ScriptManager>
+    		    <div id="templatemo_header">
+        	<div id="site_title"><h1><a href="#" target="_parent"></a></h1></div>
+            <div id="site_banner"><h1><a href="#" target="_parent"></a></h1></div>
+			<div id="site_add"><h1><a href="#" target="_parent"></a></h1></div>
+        	
+            </div>
+     
+       <div id="templatemo_body_wrapper">
+	    <div id="templatemo_wrapper">
+    
+
+        
+        <div id="templatemo_menu">
+            <ul>
+                
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="HowItWorks.aspx">How It Works</a></li>
+                <li><a href="ShowAllPrintableDiscount.aspx">View All Discount</a></li>
+				<li><a href="Corporate/Default.aspx">Post Discount</a></li>
+                <li><a href="Classifieds/Default.aspx">Post Classified AD</a></li>
+				<li><a href="Corporate/UserProfile_Step01.aspx">Sign Up Here</a></li>
+                <li><a href="ContactUs_AD.aspx">Contact Us</a></li>
+                <li><a href="helpdocs/FAQ.aspx" class="last">Help</a></li>
+                
+            </ul>    	
+        </div><!-- end of templatemo_menu -->
+        
+        <div id="templatemo_main">	
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>    
+        </div> <!-- end of templatemo main -->
+    	
+    </div>
+</div>        
+<div id="templatemo_footer_wrapper">
+    <div id="templatemo_footer">
+    	
+		<a href="default.aspx">Home</a> | <a href="#">How It Works</a> | <a href="#">View Discount</a> | <a href="#">Post Discount</a> | <a href="#">Classified AD</a> | <a href="#">Sign Up Here</a> | <a href="#">Contact Us</a> <br /><br />
+        
+        Copyright © 2012 <a href="#">Apner Deal</a> | Designed by <a href="http://www.harmonyitbd.com" target="_parent">Harmony IT</a>
+    
+    <br />
+    <asp:Label ID="lblLocation" Font-Underline="true" ForeColor="#990000" runat="server" Width="100px" Visible="false" ToolTip="Change Country">
+    </asp:Label>
+    </div>
+     <!-- end of templatemo_footer -->
+</div>
+        
+<div> 
+         <asp:Panel ID="pnlProgress" runat="server" style="background-color:#ffffff;width:300px">
+            <div style="padding:5px">
+                <table border="0" cellpadding="5px" cellspacing="0" style="width:100%">
+                    <tbody>
+                        <tr>
+                            <td style="width:50%"></td>
+                            <td style="text-align:center">
+                                <img alt="" src="images/indicator-big.gif" />
+                            </td>
+                            <td style="text-align:center;white-space:nowrap">
+                                <span style="color:#990000; font-size:20px; font-weight:bold; font-family:Vrinda;">Loading... Please Wait</span>
+                            </td>
+                            <td style="width:50%">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </asp:Panel>
+             <cc1:ModalPopupExtender ID="mpeProgress" runat="server" TargetControlID="pnlProgress" PopupControlID="pnlProgress" BackgroundCssClass="modalBackground" DropShadow="true" /> 
+            </div>
+                            <a href="http://www.lawncaredirectory.com/findlandscaper.htm">Landscape services</a>
+                |
+                <a href="http://www.link-up.net">Link Up Directory</a>
+                |
+                <a href="http://www.octomatic.com/" >Octomatic General Directory</a>
+                |
+                <a href="http://www.icid2010.org/">PR6 Icid Premium Website Directory</a>
+                |
+                <a href="http://www.linksrank.com/" title="Click here to see who's linking to my site.">Who links to my website?</a>
+                |
+                <a href="http://buzzbaiting.com/">BUZZ BAITING</a>                |                <a href="http://www.dmegs.com">link directory</a>                |                <a href="http://www.activesearchresults.com">ASR Search Engine</a>                |                <a href="http://www.theEDUCATIONjob.com">theEDUCATIONjob.com</a>                |                <a href="http://www.fuelpipe.com">Professional Web Design</a>                |                <a href="http://www.freeprwebdirectory.com/news_and_media/college_and_university/">College News</a>
+                |
+                <a href="http://www.certainanswers.com/answer/Is-telepathy-a-type-of-magic.html">About Telepathy</a>
+                | 
+                <a href="http://maltainternetdirectory.com/" >MaltaInternetDirectory</a>
+                |
+                <a href="http://www.sa.gov.au" title="Link to sa.gov.au - find what you're looking for">sa.gov.au - find what you're looking for</a><br />
+                    <br />
+                    
+                    <a href="http://www.prchecker.info/" title="Page Ranking Tool" target="_blank">
+        <img src="http://pr.prchecker.info/getpr.php?codex=aHR0cDovL2FwbmVyZGVhbC5jb20=&tag=3" alt="Page Ranking Tool" style="border:0;" /></a>
+                 |
+                     <a href="http://www.aplacetosearch.com">
+                                <img alt="APlacetoSearch.com Web Directory" border="0" height="15" src="http://www.aplacetosearch.com/images/apts98x15.gif"
+                                    width="98" /></a><br />
+                    <br />
+                    <a href="http://www.bestseowebdirectory.com/topsites/">
+                        <img alt="Web Directory :: Free Web Directory :: Add URL - Topsites Ranking" border="0"
+                            src="http://www.bestseowebdirectory.com/topsites/button.php?u=apnerdeal" /></a><br />
+    </div>
+    </form> 
+<script type="text/javascript">
+
+        Sys.Net.WebRequestManager.add_invokingRequest(onInvoke);
+        Sys.Net.WebRequestManager.add_completedRequest(onComplete);
+
+        function onInvoke(sender, args)
+        {
+            $find('<%= mpeProgress.ClientID %>').show();
+        }
+
+        function onComplete(sender, args)
+        {
+            $find('<%= mpeProgress.ClientID %>').hide();
+        }
+        function pageUnload()
+        {
+            Sys.Net.WebRequestManager.remove_invokingRequest(onInvoke);
+            Sys.Net.WebRequestManager.remove_completedRequest(onComplete);
+        }
+
+</script> 
+</body>
+</html>

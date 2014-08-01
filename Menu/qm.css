@@ -1,0 +1,137 @@
+/* Designer: Raihan A.K. raihan@rakplanet.com */
+/*!!!!!!!!!!!   Core CSS [Do Not Modify!] !!!!!!!!!!!!!*/
+.qmclear {font-size:1px;height:0px;width:0px;clear:left;line-height:0px; ;display:block;}
+.qmmc {position:relative;}
+.qmmc a {float:left;display:block;white-space:nowrap;}
+.qmmc div a {float:none;}
+.qmmc div {visibility:hidden;position:absolute;}
+
+
+/*!!!!!!!!!!!   Styles [Please Modify!] !!!!!!!!!!!*/
+
+
+	/* Remove the comments bleow for vertical mains and change the false value to
+           true in the qm_create function after the menus structure. */
+	.qmmc a {float:none}
+
+		
+
+	/*"""""""" (MAIN) Container """"""""*/
+	#qm0
+	{ 
+		background-color:transparent;
+		background-repeat:repeat-x;
+		
+	}
+
+
+	 /*"""""""" (MAIN) Items """"""""*/
+	#q m0 a
+	{
+		display:block;
+		padding:8px;
+		color:#4f4f4f;
+		
+		text-decoration:none;
+
+		background-repeat:repeat-x;
+		background-position:bottom;
+	}
+
+
+	/*"""""""" (MAIN) Hover State """"""""*/
+	#qm0 a:hover
+	{ 
+		color:#FF0000;
+
+	}
+
+
+	/*"""""""" (MAIN) Active State """"""""*/	
+	#qm0 .qmactive
+	{ 
+		/* Note: Add '!important' after each style */
+		color:#FF0000;
+	}
+
+
+	/*"""""""" (MAIN) Parent Items """"""""*/
+	#qm0 .qmparent
+	{
+	display:block;
+	padding:8px;
+	text-decoration:none;
+
+	background-repeat:repeat-x;
+	background-position:bottom;
+	
+	}
+
+
+	/*"""""""" [SUB] Containers """"""""*/
+	#qm0 div
+	{
+		background-color:#F5F5ED;
+		background-image:url(../images/left_link_bg.gif);
+		background-repeat:repeat-x;
+		padding:0px;
+		width:150px;
+		border-bottom:5px solid #d3d3d3;
+		border-left:0px solid #d3d3d3;
+		border-right:0px solid #d3d3d3;
+		border-top:1px solid #d3d3d3;
+		margin-top:-1px;
+		margin-left:-1px;
+		font-family:arial;
+		
+		
+	}
+	
+	/*"""""""" [SUB] Hover State """"""""*/
+	#qm0 div a:hover
+	{
+		color:#FF0000;
+		
+	}
+
+
+	/*""""""""[SUB] Active State """"""""*/
+	#qm0 div .qmactive
+	{
+		/* Note: Add '!important' after each style */
+
+		background-color:transparent !important;
+		color:#FF00FF;
+		
+
+	}
+
+
+	/*"""""""" [SUB] Parent Items """"""""*/
+	#qm0 div .qmparent 
+	{
+		/*background-image:url(btn_bg_arrow_selected.gif);*/
+
+		background-position:right;
+		color:#FF6600;
+		
+
+	}
+
+
+	/*"""""""" [SUB] Items """"""""*/
+	#qm0 div a
+	{		
+		font-family:verdana;
+		font-size:11px;
+		color:#63676d;
+		font-weight:normal;
+		text-decoration:none;	
+		height:23px;
+		padding:7px 10px 0px 10px;
+
+		text-align:left;
+		border-bottom:0px solid #e4e1e1;
+		
+	}
+

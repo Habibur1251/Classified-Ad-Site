@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ApnerDeal", ".", "{0967A55E-A947-415F-B479-B307BA0EEE74}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/ApnerDeal"
+		Debug.AspNetCompiler.PhysicalPath = "D:\Supon\Projects\ApnerDeal\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ApnerDeal\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ApnerDeal"
+		Release.AspNetCompiler.PhysicalPath = "D:\Supon\Projects\ApnerDeal\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ApnerDeal\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53042"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0967A55E-A947-415F-B479-B307BA0EEE74}.Debug|.NET.ActiveCfg = Debug|.NET
+		{0967A55E-A947-415F-B479-B307BA0EEE74}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

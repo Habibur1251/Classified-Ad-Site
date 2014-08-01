@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ApnerDeal">
+</Property><Property Name="Solution File" Value="C:\Users\Iron_Hide\Desktop\Final Project\Help Project\ApnerDeal\ApnerDeal\ApnerDeal.sln">
+</Property><Property Name="User Options File" Value="C:\Users\Iron_Hide\Desktop\Final Project\Help Project\ApnerDeal\ApnerDeal\ApnerDeal.suo">
+</Property><Property Name="Date" Value="Friday, May 17, 2013">
+</Property><Property Name="Time" Value="3:25 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ApnerDeal.sln" Description="File successfully backed up as C:\Users\Iron_Hide\Desktop\Final Project\Help Project\ApnerDeal\ApnerDeal\Backup\ApnerDeal.sln">
+</Event><Event ErrorLevel="0" Project="" Source="ApnerDeal.suo" Description="File successfully backed up as C:\Users\Iron_Hide\Desktop\Final Project\Help Project\ApnerDeal\ApnerDeal\Backup\ApnerDeal.suo">
+</Event><Event ErrorLevel="1" Project="ApnerDeal" Source="..\ApnerDeal" Description="Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.">
+</Event><Event ErrorLevel="0" Project="" Source="ApnerDeal.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ApnerDeal.sln" Description="Converted">
+</Event></UpgradeLog>

@@ -1,0 +1,91 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MPCorporate1.master.cs" Inherits="Corporate_MPCorporate1" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%@ Register Src="../UserControl/Inner_HomePageBottom.ascx" TagName="Inner_HomePageBottom"
+    TagPrefix="uc2" %>
+<%@ Register Src="~/UserControl/SearchCtrlDiscountInner.ascx" TagName="Search_Inner_Ctrl"
+    TagPrefix="uc4" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>ApnerDeal.com: Deals and discounts site of Bangladesh</title>
+    <meta name="description" content="Discounts, Coupons, Deals, Price Reduction news all in one place."/>
+    <meta name="keywords" content="Deals,BD Deals,Deal,Deals BD,Bangladeshi Deal,Bangladeshi Deals,apnerdeal,apnerdeal.com,apner deal,hotel"/>
+    
+    <meta name="GOOGLEBOT" content="INDEX, FOLLOW"/>
+    <meta name="ROBOTS" content="INDEX, FOLLOW"/>
+    <meta name="REVISIT-AFTER" content="6 days"/>
+    
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />   
+</head>
+
+<body>
+<form id="form1" runat="server">
+<asp:ScriptManager id="ScriptManager1" runat="server"></asp:ScriptManager>
+    		<div id="templatemo_header">
+        	<div id="site_title"><h1><a href="#" target="_parent"></a></h1></div>
+              <td style="width:150px; text-align:center; vertical-align:top; padding-left:100px">
+    <asp:UpdateProgress ID="updateProgress" runat="server">
+    <ProgressTemplate>
+    <table width="150px" border="0" cellspacing="0" cellpadding="0" align="right">
+                            <tr>
+                                <td style="height: 35px; width: 5px;">
+                                    <img alt="" src="../images/location_left.gif" width="5" height="35" />
+                                </td>
+                                <td class="style1" align="center" valign="middle" style="text-align: center">
+                                    <img alt="" src="../Images/UpdatePrgress.gif" /><br />
+                                    <span style="color:#990000; font-size:20px; font-weight:bold; font-family:Vrinda;">Loading... Please Wait</span>
+                                </td>
+                               <td style="height: 35px; width: 5px;">
+                                    <img alt="" src="../images/location_right.gif" width="5" height="35" />
+                                </td>
+                            </tr>
+                         
+                        </table>
+    </ProgressTemplate>
+    </asp:UpdateProgress>
+        <cc1:alwaysvisiblecontrolextender id="AlwaysVisibleControlExtender1" runat="server"
+            targetcontrolid="updateProgress"></cc1:alwaysvisiblecontrolextender>
+    </td>
+        	<div id="site_banner"><h1><a href="#" target="_parent"></a></h1></div>
+            <div id="site_add"><h1><a href="#" target="_parent"></a></h1></div>
+            </div>
+<!--BEGIN: PAGE HEADER-->
+
+      <div id="templatemo_body_wrapper">
+	    <div id="templatemo_wrapper">
+ 
+        <div id="templatemo_menu">
+            <ul>
+                
+                        <li>  <a href="../Default.aspx">Home</a> </li>
+                        <li><a href="../HowItWorks.aspx">How it works</a></li>
+                         <li> <a href="Default.aspx">Post Discount</a></li>
+                         <li> <a href="UserProfile_Step01.aspx">Sign Up<br /></a> </li>
+                         <li> <a href="../ShowAllPrintableDiscount.aspx">Views All Discounts</a></li>
+                           <li><a href="../Classifieds/Default.aspx">Post Classified Ad</a></li>
+             <li>           <a href="../ItemList_Classifieds.aspx?PageMode=0&CID=12&Location=Bangladesh" class="last">View Classified Ads</a></li>
+                
+            </ul>    	
+        </div>
+
+
+
+ <div id="templatemo_main">      
+<asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+</asp:contentplaceholder>
+        </div> <!-- end of templatemo main -->
+    	
+    </div>
+</div>
+
+        <uc2:Inner_HomePageBottom ID="Inner_HomePageBottom1" runat="server" />
+         <br />
+                                    <asp:Label ID="lblLocation" Font-Underline="True" forecolor="#990000" runat="server"
+                                Width="100px" ToolTip="Change Country" Visible="False"></asp:Label>
+   
+<!--END: PAGE FOOTER-->
+</form>
+</body>
+</html>

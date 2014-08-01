@@ -1,0 +1,210 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MPClassifieds2.master.cs" Inherits="Classifieds_MPClassifieds2" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%@ Register Src="../UserControl/ViewCart_Ctrl.ascx" TagName="ViewCart_Ctrl" TagPrefix="uc3" %>
+<%@ Register Src="../UserControl/InnerViewCart_ctrl.ascx" TagName="InnerViewCart_ctrl"
+    TagPrefix="uc2" %>
+<%@ Register Src="../UserControl/Inner_HomePageBottom.ascx" TagName="Inner_HomePageBottom"
+    TagPrefix="uc1" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>ApnerDeal.com: Deals and discounts site of Bangladesh</title>
+    <meta name="description" content="Discounts, Coupons, Deals, Price Reduction news all in one place."/>
+    <meta name="keywords" content="Deals,BD Deals,Deal,Deals BD,Bangladeshi Deal,Bangladeshi Deals,apnerdeal,apnerdeal.com,apner deal,hotel"/>
+    
+    <meta name="GOOGLEBOT" content="INDEX, FOLLOW"/>
+    <meta name="ROBOTS" content="INDEX, FOLLOW"/>
+    <meta name="REVISIT-AFTER" content="6 days"/>
+    
+    <link href="../css/style.css" rel="stylesheet" type="text/css" /> 
+    <link href="../css/Calender.css" rel="stylesheet" type="text/css" />             
+    <script type="text/javascript" src="../Script/jquery-1.3.2.min.js">
+     </script>     
+</head>
+<body bgcolor=white>
+<form id="form1" runat="server">
+<!--BEGIN: PAGE HEADER-->
+
+
+    		<div id="templatemo_header">
+        	<div id="site_title"><h1><a href="#" target="_parent"></a></h1></div>
+			
+        	<div id="site_banner"><h1><a href="#" target="_parent"></a></h1></div>
+            <div id="site_add"><h1><a href="#" target="_parent"></a></h1></div>
+            </div>
+
+      <div id="templatemo_body_wrapper">
+	    <div id="templatemo_wrapper">
+    <table>
+    <tr>
+    <td style="width:286px; text-align:center; vertical-align:top; padding-left:100px">
+    <asp:UpdateProgress ID="updateProgress" runat="server">
+    <ProgressTemplate>
+    <table width="250" border="0" cellspacing="0" cellpadding="0" align="right">
+                            <tr>
+                                <td style="height: 35px; width: 5px;">
+                                    <img alt="" src="../images/location_left.gif" width="5" height="35" />
+                                </td>
+                                <td class="location" align="center" valign="middle" style="height: 35px; text-align: center">
+                                    <img alt="" src="../Images/UpdatePrgress.gif" /><br />
+                                    <span style="color:#990000; font-size:20px; font-weight:bold; font-family:Vrinda;">Loading... Please Wait</span>
+                                </td>
+                               <td style="height: 35px; width: 5px;">
+                                    <img alt="" src="../images/location_right.gif" width="5" height="35" />
+                                </td>
+                            </tr>
+                        </table>
+    </ProgressTemplate>
+    </asp:UpdateProgress>
+        <cc1:alwaysvisiblecontrolextender id="AlwaysVisibleControlExtender1" runat="server"
+            targetcontrolid="updateProgress"></cc1:alwaysvisiblecontrolextender>
+    </td>
+    </tr>
+    <div id="templatemo_menu">
+            <ul>
+                    <li>    <a href="../Default.aspx">Home</a> </li>
+                      <li>  <a href="../HowItWorks.aspx">How it works</a></li>
+                        <li><a href="../Corporate/Default.aspx">Post Discount</a></li>
+                        <li><a href="../Corporate/UserProfile_Step01.aspx">Sign Up<br /></a> </li>
+                        <li><a href="../ShowAllPrintableDiscount.aspx">Views All Discounts</a></li>
+                        <li><a href="../Classifieds/Default.aspx">Post Classified Ad</a></li>
+                        <li><a href="../ItemList_Classifieds.aspx?PageMode=0&CID=12&Location=Bangladesh" class="last">View Classified Ads</a></li>
+            </ul>
+    </div>
+</table>
+<!--END: PAGE HEADER-->
+<!--BEGIN: TOP MENU-->
+        
+    
+ <div id="templatemo_main">       
+
+<!--END: TOP MENU-->
+<table width="1125px" border="0px" align="center" cellpadding="0px" cellspacing="0px">
+    <tr>
+    <td valign="top" style="font-size:12px; font-family:Verdana; width: 185px; height: 366px;">
+    <br />
+     <div class="t" style="width: 185px">
+    <div class="b">
+        <div class="l">
+            <div class="r">
+                <div class="bl">
+                    <div class="br">
+                        <div class="tl">
+                            <div class="tr" style="height:auto">
+                             <div id="qm0" class="qmmc left_link">
+                            <table>
+                            <tr>
+                            <td>
+                            <img src="../Images/CPImage/user.png" border=none height=32px width=32px />
+                            </td>
+                            <td>
+                            <a href="ControlPanel.aspx" <%if (this.intActiveModule == 1){ %>class="titleCP" <%} %>>My ApnerDeal</a>        
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                            <img src="../Images/CPImage/sellYourItems.png" border=none height=32px width=32px />
+                            </td>
+                            <td>
+                               <a href="ProductProfile_Edit.aspx?PageMode=0&CID=12&Location=Bangladesh&PID=-1"<%if (this.intActiveModule == 6){ %>class="titleCP" <%} %>>Sell Your Items</a> 
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                             <img src="../Images/CPImage/EditUserProfile.png" border=none height=32px width=32px />
+                            </td>
+                            <td>
+                              <a href="UserProfile_Edit.aspx" <%if (this.intActiveModule == 3){ %>class="titleCP" <%} %>>Edit User Profile</a> 
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                            <img src="../Images/CPImage/ChangePassword.png" border=none height=32px width=32px />
+                            </td>
+                            <td>
+                             <a href="UserProfile_ChangeLoginInfo.aspx" <%if (this.intActiveModule == 4){ %>class="titleCP" <%} %>>Change Password</a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                              <img src="../Images/CPImage/contactUs.png" border=none height=32px width=32px />
+                            </td>
+                            <td>
+                             <a href="ContactUs.aspx" <%if (this.intActiveModule == 5){ %>class="titleCP" <%} %>>Contact ApnerDeal</a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                            <br />
+                            </td>
+                            </tr>
+                            </table>
+  
+       
+        </div>
+         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     </div>
+     </div>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    
+    </td>
+    <td valign="top" style="padding-left:10px;padding-top:15px;padding-right:0px; height:auto;">
+    <div class="t" style="width:920px">
+    <div class="b">
+        <div class="l">
+            <div class="r">
+                <div class="bl">
+                    <div class="br">
+                        <div class="tl">
+                            <div class="tr" style="height:100%">
+    
+    <!--BEGIN: PAGE CONTENT-->
+    <div align="left" class="top_secondary_link">
+        <!--a href="#">I want to signup as a General User</a> |
+        <a href="#">Switch to General User Control Panel</a> |-->
+       <span class="price">You are logged in as: </span>
+       <a class="onHoverRedLink" href="UserProfile_Edit.aspx"><%=this.LoginEmail %> (<%=this.AdvertiserName %>)</a> <a href="Default.aspx" style="float:right;">Sign out</a>
+    </div>
+    <asp:ScriptManager id="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+    </asp:contentplaceholder>
+    <!--END: PAGE CONTENT-->
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </td>
+    </tr>
+</table>
+</div>
+</div>
+</div> 
+<!--BEGIN: PAGE FOOTER-->
+
+
+
+
+ <uc1:Inner_HomePageBottom ID="Inner_HomePageBottom1" runat="server" />
+
+
+ <asp:Label ID="lblLocation" Font-Underline="True" forecolor="#990000" runat="server"
+                                Width="100px" ToolTip="Change Country" Visible="False"></asp:Label></div>
+
+<!--END: PAGE FOOTER-->
+</form>
+</body>
+</html>

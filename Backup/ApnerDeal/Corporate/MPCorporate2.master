@@ -1,0 +1,218 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MPCorporate2.master.cs" Inherits="Corporate_MPCorporate2" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%@ Register Src="~/UserControl/SearchCtrlDiscountInner.ascx" TagName="Search_Inner_Ctrl"
+    TagPrefix="uc4" %>
+<%@ Register Src="~/UserControl/Inner_HomePageBottom.ascx" TagName="Inner_HomePageBottom"
+    TagPrefix="uc1" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>ApnerDeal.com: Deals and discounts site of Bangladesh</title>
+    
+    <meta name="description" content="Discounts, Coupons, Deals, Price Reduction news all in one place."/>
+    <meta name="keywords" content="Deals,BD Deals,Deal,Deals BD,Bangladeshi Deal,Bangladeshi Deals,apnerdeal,apnerdeal.com,apner deal,hotel"/>
+    
+    <meta name="GOOGLEBOT" content="INDEX, FOLLOW"/>
+    <meta name="ROBOTS" content="INDEX, FOLLOW"/>
+    <meta name="REVISIT-AFTER" content="6 days"/>
+       <link href="../css/style.css" rel="stylesheet" type="text/css" /> 
+    <link href="../css/style.css" rel="stylesheet" type="text/css" /> 
+    <link href="../css/Calender.css" rel="stylesheet" type="text/css" />         
+    <script type="text/javascript" src="../Script/jquery-1.3.2.min.js">
+    </script>
+    <script src="../Script/DateValidation.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    function genericPopup(href,width,height,scrollbars,resizable,top,left,toolbar,status,directories,menubar){var param="width="+width+", height="+height+", scrollbars="+scrollbars+", resizable="+resizable+",top="+top+",left="+left+",toolbar="+toolbar+",status="+status+",directories="+directories+",menubar="+menubar+"";return window.open(href,"",param);}
+    </script>
+    <style type="text/css">
+        .style1
+        {
+            height: auto;
+            width: 1040px;
+        }
+    </style>
+</head>
+<body>
+
+<form id="form1" runat="server">
+<!--BEGIN: PAGE HEADER-->
+ <asp:ScriptManager ID="sm" runat="server" EnablePartialRendering="true">
+     <Scripts>
+    <asp:ScriptReference Path="~/JavaScript/thickbox-compressed.js" />
+    
+    <asp:ScriptReference Path="~/JavaScript/jquery.blockUI.js" />
+     </Scripts>
+        </asp:ScriptManager>
+
+<div id="templatemo_header">
+        	<div id="site_title"><h1><a href="#" target="_parent"></a></h1></div>
+              <td style="width:150px; text-align:center; vertical-align:top; padding-left:100px">
+    <asp:UpdateProgress ID="updateProgress" runat="server">
+    <ProgressTemplate>
+    <table width="150px" border="0" cellspacing="0" cellpadding="0" align="right">
+                            <tr>
+                                <td style="height: 35px; width: 5px;">
+                                    <img alt="" src="../images/location_left.gif" width="5" height="35" />
+                                </td>
+                                <td class="style1" align="center" valign="middle" style="text-align: center">
+                                    <img alt="" src="../Images/UpdatePrgress.gif" /><br />
+                                    <span style="color:#990000; font-size:20px; font-weight:bold; font-family:Vrinda;">Loading... Please Wait</span>
+                                </td>
+                               <td style="height: 35px; width: 5px;">
+                                    <img alt="" src="../images/location_right.gif" width="5" height="35" />
+                                </td>
+                            </tr>
+                         
+                        </table>
+    </ProgressTemplate>
+    </asp:UpdateProgress>
+        <cc1:alwaysvisiblecontrolextender id="AlwaysVisibleControlExtender2" runat="server"
+            targetcontrolid="updateProgress"></cc1:alwaysvisiblecontrolextender>
+    </td>
+        	<div id="site_banner"><h1><a href="#" target="_parent"></a></h1></div>
+            <div id="site_add"><h1><a href="#" target="_parent"></a></h1></div>
+            </div>
+       
+
+                           
+
+     <div id="templatemo_body_wrapper">
+	    <div id="templatemo_wrapper">
+ 
+        <div id="templatemo_menu">
+            <ul>
+                
+                        <li>  <a href="../Default.aspx">Home</a> </li>
+                        <li><a href="../HowItWorks.aspx">How it works</a></li>
+                         <li> <a href="Default.aspx">Post Discount</a></li>
+                         <li> <a href="UserProfile_Step01.aspx">Sign Up<br /></a> </li>
+                         <li> <a href="../ShowAllPrintableDiscount.aspx">Views All Discounts</a></li>
+                           <li><a href="../Classifieds/Default.aspx">Post Classified Ad</a></li>
+             <li>           <a href="../ItemList_Classifieds.aspx?PageMode=0&CID=12&Location=Bangladesh" class="last">View Classified Ads</a></li>
+                
+            </ul>    	
+        </div>
+
+
+
+ <div id="templatemo_main"> 
+<table width="1050px" bgcolor="white" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+    <td valign="top" style="font-size:10px; font-family:Verdana; width: 200px; height: 366px;">
+     <div class="t" style="width:200px">
+    <div class="b">
+        <div class="l">
+            <div class="r">
+                <div class="bl">
+                    <div class="br">
+                        <div class="tl">
+                            <div class="tr" style="height:auto">
+    <div id="qm0" class="qmmc left_link">
+    <table>
+    <tr>
+    <td>
+    <img src="../Images/CPImage/user.png" border="none" height="32px" width="32px" />
+    </td>
+    <td align="left" style="width: 145px">
+    <a href="ControlPanel.aspx" <%if (this.intActiveModule == 1){ %>class="titleCP" <%} %>>My ApnerDeal</a>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <img src="../Images/CPImage/Discount.png" border="none" height="32px" width="32px" />
+    </td>
+    <td align="left" style="width: 145px">
+    <a href="CheckAdmin.aspx" <%if (this.intActiveModule == 40){ %>class="titleCP" <%} %>>Post Your Discount</a>
+    </td>
+    </tr>
+
+    
+     <tr>
+    <td>
+    <img src="../Images/CPImage/EditUserProfile.png" border="none" height="32px" width="32px" />
+    </td>
+    <td align="left" style="width: 145px">
+      <a href="UserProfile_Edit.aspx" <%if (this.intActiveModule == 2){ %>class="titleCP" <%} %>>Edit User Profile</a>  
+    </td>
+    </tr>
+    
+    <tr>
+    <td>
+    <img src="../Images/CPImage/ChangePassword.png" border="none" height="32px" width="32px" />
+    </td>
+    <td align="left" style="width: 145px">
+      <a href="UserProfile_ChangeLoginInfo.aspx" <%if (this.intActiveModule == 6){ %>class="titleCP" <%} %>>Change Password</a> 
+    </td>
+    </tr>
+    
+    <tr>
+    <td style="height: 50px">
+    <img src="../Images/CPImage/contactUs.png" border="none" height="32px" width="32px" />
+    </td>
+    <td align="left" style="height: 50px; width: 145px;">
+      <a href="ContactUs.aspx" <%if (this.intActiveModule == 7){ %>class="titleCP" <%} %>>Contact ApnerDeal.com</a> 
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>
+    </td>
+    </tr>
+    
+    </table>
+       
+    </div>
+    <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     </div>
+     <br />
+     <a target="_blank" href="../Discount/Default.aspx"><%--<img src="../Images/InstantCash.jpg" border="0" alt="" width="160px" height="600px"/>--%></a>
+      </td>
+    <td align="right" valign="top" style="padding-left:3px;padding-top:5px;padding-right:0px; width: 850px;">   
+        <span class="price" style="float:left;">
+            You are logged in as: </span>
+        <a class="onHoverRedLink" href="UserProfile_Edit.aspx" style="float:left;"><%=this.LoginEmail %> (<%=this.CompanyName %>)</a> <a href="Default.aspx" style="float:right;">Sign out</a>
+    <!--BEGIN: PAGE CONTENT-->
+    <asp:contentplaceholder  id="ContentPlaceHolder1" runat="server">
+    
+    </asp:contentplaceholder>
+    <!--END: PAGE CONTENT-->
+    </td>
+    </tr>
+</table>
+</div>
+</div>
+</div>
+
+
+
+<!--BEGIN: PAGE FOOTER-->
+
+ <asp:Label ID="lblLocation" Font-Underline="True" forecolor="#990000" runat="server"
+                                Width="100px" ToolTip="Change Country" Visible="False"></asp:Label>
+<uc1:Inner_HomePageBottom ID="Inner_HomePageBottom1" runat="server" />
+    
+<!--END: PAGE FOOTER-->
+<script type="text/javascript">
+            $(window).load(function() {
+                jQuery('#loading-image').hide();
+            });
+
+            $(document).ready(function () {
+                $('#maincontainer').fadeIn(2000);
+            });
+</script>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MPCommonListing.master.cs" Inherits="Common_MPCommonListing" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%@ Register Src="../UserControl/BusySign_Ctrl.ascx" TagName="BusySign_Ctrl" TagPrefix="uc7" %>
+    
+<%@ Register Src="../UserControl/Login_Ctrl.ascx" TagName="Login_Ctrl" TagPrefix="uc5" %>
+
+<%@ Register Src="../UserControl/Inner_HomePageBottom.ascx" TagName="Inner_HomePageBottom"
+    TagPrefix="uc3" %>
+
+
+<%@ Register Src="../Menu/AllCategoryMenu.ascx" TagName="AllCategory_LeftMenu" TagPrefix="uc9" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+     <title>www.apnerdeal.com</title>
+    
+    <meta name="description" content="Deals and discounts site of Bangladesh. Discounts, Coupons, Deals, Price Reduction news all in one place."/>
+    <meta name="keywords" content="Deals,BD Deals,Deal,Deals BD,Bangladeshi Deal,Bangladeshi Deals,apnerdeal,apnerdeal.com,apner deal,hotel"/>
+    
+    <meta name="GOOGLEBOT" content="INDEX, FOLLOW"/>
+    <meta name="ROBOTS" content="INDEX, FOLLOW"/>
+    <meta name="REVISIT-AFTER" content="6 days"/>
+    	
+   <link href="../CSS/style.css" rel="stylesheet" type="text/css" />   
+   <script type="text/javascript" src="../Script/jquery-1.3.2.min.js"></script>
+   <script type="text/javascript">
+    function genericPopup(href, width, height, scrollbars,resizable,top,left){
+    var param = "width="+width+", height="+height+", scrollbars="+scrollbars+", resizable="+resizable+",top="+top+",left="+left+",status";
+    return window.open(href, "", param);
+    }
+    </script>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table width="1000" border="0px" align="center" cellpadding="0px" cellspacing="0px">
+    <tr>
+    <td style="width: 496px; height: 40px">
+    <a href="../Default.aspx">
+    <img src="../Images/apnerdeal_logo.png" width="260px" height="91px" alt="" border="none" />
+    </a>
+    </td>
+     
+    <td style="width: 10px; height: 71px">
+    &nbsp;
+    </td>
+    
+    <td width="102px" valign="top" style="padding-top:10px; height: 40px;" >
+        &nbsp;</td>
+        
+        <td width="360px" valign="top" style="text-align:right; height: 71px;">
+            <table width="350px" border="0px" cellspacing="0px" cellpadding="15px">
+            <tr>
+                <td colspan="3" style="height: 14px">
+                    <asp:AdRotator ID="rotCommonPage" runat="server" Width="350px" Height="50px" />
+                        
+                            <asp:Label 
+                                ID="lblLocation" 
+                                Font-Underline="true" 
+                                CssClass="topLinkTitle"
+                                runat="server"
+                                Visible="false"
+                                Width="100px" ToolTip="Change Country">
+                            </asp:Label>
+                </td>
+            </tr>
+            </table>
+            &nbsp; &nbsp;
+            
+            </td>
+    </tr>
+        </table>
+        <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" class="top_links">
+            <tr>
+                <td width="5" valign="middle">
+                    <img alt="" src="../images/top_link_left.gif" width="5" height="41" /></td>
+                <td style="width: 1250px">
+                    <div>
+                        
+                        <a href="../Default.aspx">Home</a> 
+                        <a href="../HowItWorks.aspx">How it works</a>
+                        <a href="../Corporate/Default.aspx">Post Discount</a>
+                        <a href="../Corporate/UserProfile_Step01.aspx">Sign Up<br /></a> 
+                        <a href="../ShowAllPrintableDiscount.aspx">Views All Discounts</a>
+                        <a href="../Classifieds/Default.aspx">Post Classified Ad</a>
+                        <a href="../ContactUs_AD.aspx">Contact Us</a>
+                        
+                    </div>
+                </td>
+                <td align="right" width="10px">
+                    &nbsp;</td>
+                <td width="5">
+                    <img alt="" src="../images/top_link_right.gif" width="5" height="41" /></td>
+            </tr>
+        </table>
+        
+        
+        <table width="1000px" cellpadding="0px" cellspacing="0px" align="center">
+            <tr>
+<td style="text-align:right; position:absolute;" >
+</td>
+ </tr>
+ <tr>
+ <td style="text-align:left; position:absolute;">
+ 
+<uc9:AllCategory_LeftMenu ID="AllCategory_LaftMenu" runat="server" />
+ </td>
+ </tr>
+                <tr>
+                <td valign="top" style="width: 1000px" >
+                  <br />
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                
+                
+            </tr>
+            <tr>
+                <td  style="padding-top:15px; width:1000px;">
+                    
+                    <uc3:Inner_HomePageBottom ID="Inner_HomePageBottom1" runat="server" />
+                </td>
+                
+            </tr>
+            <tr>
+            <td style="width: 1000px">
+            <asp:UpdateProgress ID="updateProgress" runat="server">
+             <ProgressTemplate>
+                 <table width="200px" border="0px" cellspacing="0px" cellpadding="0px" align="right">
+                     <tr>
+                         <td style="height: 35px; width: 5px;">
+                             <img alt="" src="../images/location_left.gif" width="5px" height="35px" />
+                         </td>
+                         <td class="location" align="center" valign="middle" style="height: 35px; text-align: center">
+                            <img alt="" src="../Images/loading_gif.gif" width="16px" height="16px" />
+                           </td>
+                         <td class="location" align="center" valign="middle" style="height: 35px; font-weight: bold;
+                             text-align: center; color: #990000">
+                             Loading... Please Wait
+                         </td>
+                         <td width="5px" style="height: 35px">
+                             <img alt="" src="../images/location_right.gif" width="5px" height="35px" />
+                         </td>
+                     </tr>
+                     <tr>
+                     </tr>
+                 </table>
+             </ProgressTemplate>
+         </asp:UpdateProgress>
+         <cc1:AlwaysVisibleControlExtender ID="AlwaysVisibleControlExtender1" runat="server" TargetControlID="updateProgress">
+         </cc1:AlwaysVisibleControlExtender>
+            </td>
+            </tr>
+        </table>
+        
+
+    </form>
+    
+
+    
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+
+.collapsed 
+{
+	display:none;	
+}
+.expanded 
+{
+	display:block;
+}
+.mainTitleStyle 
+{
+	 font-family:Verdana;
+	 font-size:14px;
+	 font-weight:bold;
+}
+th
+{ 
+	text-align:left;
+} 
+.updateAndCancelLinks-hidden
+{
+  display:none;
+}
+.updateAndCancelLinks-show
+{
+	display:block;
+}
+
+

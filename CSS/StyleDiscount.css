@@ -1,0 +1,14 @@
+﻿body 
+{
+	margin-left:0px;margin-top:0px;margin-right:0px;margin-bottom:10px;font-family:verdana;font-size:12px;color:#505050;
+}
+
+.top_linksDiscount{background-image:url(../images/top_link_bg.gif);background-repeat:repeat-x;}
+.top_linksDiscount div{margin-left:5px;}
+.top_linksDiscount div a{display:block;float:left;padding-left:10px;padding-right:10px;padding-top:12px;height:27px;margin-top:1px;background-image:url(../images/top_link_seperator.gif);background-position:right;background-repeat:no-repeat;text-align:center;vertical-align:middle;font-family:verdana;font-size:11px;color:#FFFFFF;font-weight:bold;text-decoration:none;}
+.top_linksDiscount div .selected{display:block;float:left;padding-left:10px;padding-right:10px;padding-top:12px;height:28px;margin-top:-1px;background-image:url(../images/top_link_bg_selected.gif);background-position:right;background-repeat:repeat-x;text-align:center;vertical-align:middle;font-family:verdana;font-size:11px;color:#ff0000;font-weight:bold;text-decoration:none;}
+
+.colortitleDiscount{color:#E26E22;font-family:verdana,arial,helvetica,sans-serif;}
+.mediumfont{font-weight:bold;font-size:12px;}
+span.titleDiscount{font-weight:bold;font-family:Verdana,Helvetica,sans-serif;color:Black;font-size:14px;}
+a.onHoverTitleLinkDiscount:hover{color:#4f4f4f;text-decoration:underline;}

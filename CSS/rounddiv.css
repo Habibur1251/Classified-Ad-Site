@@ -1,0 +1,81 @@
+﻿body {
+}
+.train_t3 {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#FFF5FB url(http://training.bdjobs-server.com/images/tblimg/t3.gif) repeat-x scroll 0 0;
+width:100%;
+}
+
+
+.train_b3 {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(http://training.bdjobs-server.com/images/tblimg/border_violate.gif) repeat-x scroll 0 100%;
+}
+
+.train_l3 {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(http://training.bdjobs-server.com/images/tblimg/border_violate.gif) repeat-y scroll 0 0;
+}
+
+
+
+.train_r3 {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(http://training.bdjobs-server.com/images/tblimg/border_violate.gif) repeat-y scroll 100% 0;
+}
+
+
+.train_bl3 {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(http://training.bdjobs-server.com/images/tblimg/bl3.gif) no-repeat scroll 0 100%;
+}
+
+
+
+.train_br3 {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(http://training.bdjobs-server.com/images/tblimg/br3.gif) no-repeat scroll 100% 100%;
+}
+
+
+
+.train_tl3 {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(http://training.bdjobs-server.com/images/tblimg/tl3.gif) no-repeat scroll 0 0;
+}
+
+
+.train_tr3 {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(http://training.bdjobs-server.com/images/tblimg/tr3.gif) no-repeat scroll 100% 0;
+padding:1px;
+}
+
+.train_t3Title {
+background-image:url(http://training.bdjobs-server.com/images/buttons/new2.gif);
+background-position:99% 30%;
+background-repeat:no-repeat;
+border:0 solid #CCCCCC;
+color:#FFFFFF;
+font-family:verdana;
+font-size:10px;
+font-weight:bold;
+height:25px;
+padding:12px 5px 0 10px;
+}

@@ -1,0 +1,13 @@
+﻿body{}
+#cat_list li.homeservices{background-position:0 -266px;}
+#cat_list li.arts{background-position:0 -70px;}
+#cat_list li.professional{background-position:0 -168px;}
+#cat_list li.education{background-position:0 -28px;}
+#cat_list li.realestate{background-position:0 -154px;}
+#cat_list li.financialservices{background-position:0 -238px;}
+#cat_list li.localflavor{}
+#cat_list ul{list-style-image:none;list-style-position:outside;list-style-type:none;}
+#cat_list li{-moz-background-clip:border;-moz-background-inline-policy:continuous;-moz-background-origin:padding;background:transparent url(../images/cat-icons.png) no-repeat scroll 0 0;height:14px;overflow:hidden;padding:0 0 0 15px;}
+#cat_list ul{list-style-type:disc;margin-top:5px;}
+#cat_list ul li, ul ul li{margin-top:5px;}
+#cat_list ul, li{margin:0;padding:0;}

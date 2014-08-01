@@ -1,0 +1,22 @@
+﻿.review_search_section p .ybtn {
+position:relative;
+top:13px;
+}
+
+span.ybtn {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent none repeat scroll 0 0;
+}
+.ybtn button, .ybtn, .ybtn span {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(images/blank_buttons.gif) no-repeat scroll right top;
+font-weight:bold;
+line-height:2;
+white-space:nowrap;
+}
+body {
+}

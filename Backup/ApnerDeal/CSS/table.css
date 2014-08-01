@@ -1,0 +1,113 @@
+/*
+## Last Modified: Sep01-08;
+## Raihan A.K.
+## raihan@rakplanet.com
+## Cell: 01715 302662
+*/
+
+/* New Style For Home Page   */
+.t145 {background: url(../images/tbl_imgs/border.gif) 0 0 repeat-x; background-color:#FE9430;width:100%;height:100%;}
+.set31_t {background: url(../images/tbl_imgs/set3/Bar-5.gif) 0 0 repeat-x; background-color:#FFFFFF;width:100%;}
+.set32_tl {background: url(../images/tbl_imgs/set3/Bar12.gif) 0 0 no-repeat;}
+.set33_tr {background: url(../images/tbl_imgs/set3/Bar-21.gif) 100% 0 no-repeat; padding:1px}
+
+
+/* SMS TABLE STARTS */
+.t2 {background: url(../images/tbl_imgs/t2.gif) 0 0 repeat-x; background-color:#fcfcfc;width:100%;}
+.tl2 {background: url(../images/tbl_imgs/tl2.gif) 0 0 no-repeat}
+.tr2 {background: url(../images/tbl_imgs/tr2.gif) 100% 0 no-repeat; padding:1px}
+.t {background: url(../images/tbl_imgs/border.gif) 0 0 repeat-x; background-color:#ffffff;width:100%;}
+.b {background: url(../images/tbl_imgs/border.gif) 0 100% repeat-x;}
+.l {background: url(../images/tbl_imgs/border.gif) 0 0 repeat-y; }
+.r {background: url(../images/tbl_imgs/border.gif) 100% 0 repeat-y;}
+.bl {background: url(../images/tbl_imgs/bl.gif) 0 100% no-repeat;}
+.br {background: url(../images/tbl_imgs/br.gif) 100% 100% no-repeat;}
+.tl {background: url(../images/tbl_imgs/tl.gif) 0 0 no-repeat}
+.tr {background: url(../images/tbl_imgs/tr.gif) 100% 0 no-repeat; padding:1px}
+/* SMS TABLE ENDS */
+
+/* RIGHT ADVERTISEMENT TABLE STARTS SET 2 */
+.set2_t {background: url(../images/tbl_imgs/set2/t.gif) 0 0 repeat-x; background-color:#ececde;width:100%;}
+.set2_b {background: url(../images/tbl_imgs/set2/b.gif) 0 100% repeat-x;}
+.set2_l {background: url(../images/tbl_imgs/set2/l.gif) 0 0 repeat-y; }
+.set2_r {background: url(../images/tbl_imgs/set2/r.gif) 100% 0 repeat-y;}
+.set2_bl {background: url(../images/tbl_imgs/set2/bl.gif) 0 100% no-repeat;}
+.set2_br {background: url(../images/tbl_imgs/set2/br.gif) 100% 100% no-repeat;}
+.set2_tl {background: url(../images/tbl_imgs/set2/tl.gif) 0 0 no-repeat}
+.set2_tr {background: url(../images/tbl_imgs/set2/tr.gif) 100% 0 no-repeat; padding:1px}
+/* RIGHT ADVERTISEMENT TABLE ENDS SET 2*/
+
+/* RIGHT ADVERTISEMENT TABLE STARTS SET 3 */
+.set3_t {background: url(../images/tbl_imgs/set3/t.gif) 0 0 repeat-x; background-color:#FFFFFF;width:100%;}
+
+.set3_b {background: url(../images/tbl_imgs/set3/b.gif) 0 100% repeat-x;}
+.set3_l {background: url(../images/tbl_imgs/set3/l.gif) 0 0 repeat-y; }
+.set3_r {background: url(../images/tbl_imgs/set3/r.gif) 100% 0 repeat-y;}
+.set3_bl {background: url(../images/tbl_imgs/set3/bl.gif) 0 100% no-repeat;}
+.set3_br {background: url(../images/tbl_imgs/set3/br.gif) 100% 100% no-repeat;}
+.set3_tl {background: url(../images/tbl_imgs/set3/tl.gif) 0 0 no-repeat}
+.set3_tr {background: url(../images/tbl_imgs/set3/tr.gif) 100% 0 no-repeat; padding:1px}
+/* RIGHT ADVERTISEMENT TABLE ENDS SET 3*/
+
+
+/* ACCESSORIES TABLE STARTS */
+.prdcts div{
+	float:left;
+	width:135px;
+	height:92px;
+	font-family:tahoma; font-size:11px; color: #635b5b;
+	border-bottom:1px dashed #CCCCCC;
+	border-right:1px dashed #CCCCCC;
+	padding:10px;
+	padding-top:10px;
+}
+
+.prdct_title {
+	font-family: tahoma;
+	font-size: 12px;
+	font-weight: bold;
+	color: #EF4029;
+}
+
+
+.prdcts_thumb{
+	border:0px dashed #CCCCCC;
+}
+
+.prdcts_thumb .row{
+	display:block;
+	width:100%;
+	height:auto;
+	font-family:tahoma; font-size:11px; color: #635b5b;
+	border-bottom:1px dashed #CCCCCC;
+}
+
+.prdcts_thumb .col_1{
+	float:left;margin-left:5px;margin-right:5px; width:90px;border-right:1px dashed #CCCCCC;
+}
+
+.prdcts_thumb .col_2{
+	float:left; width:600px; padding:5px;border:0px solid #666666
+}
+/* ACCESSORIES TABLE ENDS */
+
+/* REPORT TABLE STARTS */
+
+.tbl_report .tbl_head td{
+	font-family:tahoma;
+	font-size:12px;
+	font-weight:bold;
+	color:#E0751E;
+	padding:3px;
+	background-color:#FCF0E6;
+	border-bottom:1px solid #CCCCCC;
+}
+.tbl_report .tbl_rows td{
+	font-family:arial;
+	font-size:11px;
+	color:#7c746e;
+	padding:3px;
+	border-bottom:1px dotted #CCCCCC;
+
+}
+/* REPORT TABLE ENDS */
